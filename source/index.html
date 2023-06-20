@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Название проекта</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="" src="" width="" height="" alt="Логотип кофейни" />
+      </a>
+      <nav>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">О нас</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Магазин Drink to go.</h1>
+      <section class="page-slider">
+        <button
+          class="page-slider__button page-slider__button--left"
+          type="button"
+        >
+          <span class="visually-hidden">Предыдущая фотография</span>
+        </button>
+        <button
+          class="page-slider__button page-slider__button--right"
+          type="button"
+        >
+          <span class="visually-hidden">Следующая фотография</span>
+        </button>
+        <h2 class="page-slider__title">Декаф Флэт Уайт</h2>
+        <img src="#" alt="Фотография товара" />
+        <p class="page-slider__description">
+          Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
+          молоком — то, что нужно для расслабления после тяжёлого рабочего дня
+        </p>
+        <div class="page-slider__buy">
+          <div class="page-slider__buy--price">
+            <p class="page-slider__price--old">295₽</p>
+            <p class="page-slider__price--new">225₽</p>
+          </div>
+          <button class="page-slider__buy--button" type="button">
+            <span class="">Заказать</span>
+          </button>
+        </div>
+      </section>
+      <section class="features">
+        <span class="badge">Преимущества</span>
+        <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <img src="#" alt="Таймер." />
+            <h3 class="features__item--title">Скорость</h3>
+            <p class="features__item--description">
+              Готовый напиток всегда под рукой — просто открой банку
+            </p>
+          </li>
+          <li class="features__item">
+            <img src="#" alt="Карман." />
+            <h3 class="features__item--title">Удобство</h3>
+            <p class="features__item--description">
+              Легко помещается и в карман, и в маленькую сумочку
+            </p>
+          </li>
+          <li class="features__item">
+            <img src="#" alt="Молния." />
+            <h3 class="features__item--title">Бодрость</h3>
+            <p class="features__item--description">
+              Сбалансированная доза кофеина даст мощный заряд энергии
+            </p>
+          </li>
+          <li class="features__item">
+            <img src="#" alt="Листок." />
+            <h3 class="features__item--title">Экологичность</h3>
+            <p class="features__item--description">
+              Вся упаковка сделана из перерабатываемых материалов
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="main-catalog">
+        <span class="badge">Каталог</span>
+        <h2 class="main-catalog__title">Каталог кофейных напитков</h2>
+        <form class="main-catalog__filter">
+          <fieldset
+            class="main-catalog__fieldset main-catalog__fieldset--price"
+          >
+            <h3 class="main-catalog__label main-catalog__label--price">Цена</h3>
+            <div class="range-scale">
+              <div class="range-bar" style="left: 0; width: 226px">
+                ТУТ ДОЛЖЕН БЫТЬ СЛАЙДЕР
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="main-catalog__fieldset main-catalog__fieldset--milk">
+            <h3 class="main-catalog__label main-catalog__label--milk">
+              Наличие молока
+            </h3>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>
