@@ -11,7 +11,7 @@
       <a class="main-header__logo">
         <img class="" src="" width="" height="" alt="Логотип кофейни" />
       </a>
-      <nav>
+      <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -54,13 +54,14 @@
           Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
           молоком — то, что нужно для расслабления после тяжёлого рабочего дня
         </p>
-        <div class="page-slider__buy">
-          <div class="page-slider__buy--price">
-            <p class="page-slider__price--old">295₽</p>
-            <p class="page-slider__price--new">225₽</p>
+        <div class="page-slider__buy buy">
+          <div class="buy__price price">
+            <p class="price__old">295₽</p>
+            <p class="price__new">225₽</p>
           </div>
-          <button class="page-slider__buy--button" type="button">
-            <span class="">Заказать</span>
+          <button class="buy__button" type="button">
+            <!-- <span class="">Заказать</span> -->
+            Заказать
           </button>
         </div>
       </section>
@@ -70,29 +71,29 @@
         <ul class="features__list">
           <li class="features__item">
             <img src="#" alt="Таймер." />
-            <h3 class="features__item--title">Скорость</h3>
-            <p class="features__item--description">
+            <h3 class="features__title">Скорость</h3>
+            <p class="features__description">
               Готовый напиток всегда под рукой — просто открой банку
             </p>
           </li>
           <li class="features__item">
             <img src="#" alt="Карман." />
-            <h3 class="features__item--title">Удобство</h3>
-            <p class="features__item--description">
+            <h3 class="features__title">Удобство</h3>
+            <p class="features__description">
               Легко помещается и в карман, и в маленькую сумочку
             </p>
           </li>
           <li class="features__item">
             <img src="#" alt="Молния." />
-            <h3 class="features__item--title">Бодрость</h3>
-            <p class="features__item--description">
+            <h3 class="features__title">Бодрость</h3>
+            <p class="features__description">
               Сбалансированная доза кофеина даст мощный заряд энергии
             </p>
           </li>
           <li class="features__item">
             <img src="#" alt="Листок." />
-            <h3 class="features__item--title">Экологичность</h3>
-            <p class="features__item--description">
+            <h3 class="features__title">Экологичность</h3>
+            <p class="features__description">
               Вся упаковка сделана из перерабатываемых материалов
             </p>
           </li>
@@ -112,8 +113,10 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="main-catalog__fieldset main-catalog__fieldset--milk">
-            <h3 class="main-catalog__fieldset--title">Наличие молока</h3>
+          <fieldset
+            class="main-catalog__fieldset main-catalog__fieldset--milk fieldset"
+          >
+            <h3 class="fieldset__title">Наличие молока</h3>
             <label
               class="main-catalog__label main-catalog__label--no-matter"
               for="no-matter-milk"
@@ -182,9 +185,9 @@
             </label>
           </fieldset>
           <fieldset
-            class="main-catalog__fieldset main-catalog__fieldset--country"
+            class="main-catalog__fieldset main-catalog__fieldset--country fieldset"
           >
-            <h3 class="main-catalog__fieldset--title">Страна произрастания</h3>
+            <h3 class="fieldset__title">Страна произрастания</h3>
             <label
               class="main-catalog__label main-catalog__label--brazil"
               for="brazil"
@@ -373,9 +376,9 @@
       <section class="map">ТУТ БУДЕТ КАРТА</section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__links">
-        <a class="main-footer__links--shop" href="index.html">
-          <span class="main-footer__links--description"
+      <div class="main-footer__links links">
+        <a class="links__shop" href="index.html">
+          <span class="links__description"
             >Интернет-магазин кофейных напитков
           </span>
         </a>
