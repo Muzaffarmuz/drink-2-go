@@ -33,7 +33,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main-index">
       <h1 class="visually-hidden">Магазин Drink to go.</h1>
       <section class="page-slider">
         <button
@@ -105,7 +105,7 @@
           <fieldset
             class="main-catalog__fieldset main-catalog__fieldset--price"
           >
-            <h3 class="main-catalog__label main-catalog__label--price">Цена</h3>
+            <!-- <h3 class="main-catalog__label main-catalog__label--price">Цена</h3> -->
             <div class="range-scale">
               <div class="range-bar" style="left: 0; width: 226px">
                 ТУТ ДОЛЖЕН БЫТЬ СЛАЙДЕР
@@ -113,14 +113,307 @@
             </div>
           </fieldset>
           <fieldset class="main-catalog__fieldset main-catalog__fieldset--milk">
-            <h3 class="main-catalog__label main-catalog__label--milk">
-              Наличие молока
-            </h3>
+            <h3 class="main-catalog__fieldset--title">Наличие молока</h3>
+            <label
+              class="main-catalog__label main-catalog__label--no-matter"
+              for="no-matter-milk"
+            >
+              <input
+                class=""
+                type="radio"
+                name="type-of-milk"
+                id="no-matter-milk"
+                value="no-matter-milk"
+                checked
+              />
+              <span
+                class="main-catalog__control-mark main-catalog__control-mark--radio"
+              ></span>
+              <span class="main-catalog__input-label">Неважно</span>
+            </label>
+            <label
+              class="main-catalog__label main-catalog__label--animal"
+              for="animal-milk"
+            >
+              <input
+                class=""
+                type="radio"
+                name="type-of-milk"
+                id="animal-milk"
+                value="animal-milk"
+              />
+              <span
+                class="main-catalog__control-mark main-catalog__control-mark--radio"
+              ></span>
+              <span class="main-catalog__input-label">Только животное</span>
+            </label>
+            <label
+              class="main-catalog__label main-catalog__label--animal"
+              for="vegetable-milk"
+            >
+              <input
+                class=""
+                type="radio"
+                name="type-of-milk"
+                id="vegetable-milk"
+                value="vegetable-milk"
+              />
+              <span
+                class="main-catalog__control-mark main-catalog__control-mark--radio"
+              ></span>
+              <span class="main-catalog__input-label">Только растительное</span>
+            </label>
+            <label
+              class="main-catalog__label main-catalog__label--without-milk"
+              for="without-milk"
+            >
+              <input
+                class=""
+                type="radio"
+                name="type-of-milk"
+                id="without-milk"
+                value="without-milk"
+                disabled
+              />
+              <span
+                class="main-catalog__control-mark main-catalog__control-mark--radio"
+              ></span>
+              <span class="main-catalog__input-label">Без молока</span>
+            </label>
           </fieldset>
+          <fieldset
+            class="main-catalog__fieldset main-catalog__fieldset--country"
+          >
+            <h3 class="main-catalog__fieldset--title">Страна произрастания</h3>
+            <label
+              class="main-catalog__label main-catalog__label--brazil"
+              for="brazil"
+            >
+              <input
+                class=""
+                type="checkbox"
+                id="brazil"
+                name="brazil"
+                checked
+              />
+              <span
+                class="main-catalog__control-mark main-catalog__control-mark--checkbox"
+              ></span>
+              <span class="main-catalog__input-label">Бразилия</span>
+            </label>
+            <label
+              class="main-catalog__label main-catalog__label--ethiopia"
+              for="ethiopia"
+            >
+              <input class="" type="checkbox" id="ethiopia" name="ethiopia" />
+              <span
+                class="main-catalog__control-mark main-catalog__control-mark--checkbox"
+              ></span>
+              <span class="main-catalog__input-label">Эфиопия</span>
+            </label>
+            <label
+              class="main-catalog__label main-catalog__label--colombia"
+              for="colombia"
+            >
+              <input class="" type="checkbox" id="colombia" name="colombia" />
+              <span
+                class="main-catalog__control-mark main-catalog__control-mark--checkbox"
+              ></span>
+              <span class="main-catalog__input-label">Колумбия</span>
+            </label>
+            <label
+              class="main-catalog__label main-catalog__label--costa-rica"
+              for="costa-rica"
+            >
+              <input
+                class=""
+                type="checkbox"
+                id="costa-rica"
+                name="costa-rica"
+              />
+              <span
+                class="main-catalog__control-mark main-catalog__control-mark--checkbox"
+              ></span>
+              <span class="main-catalog__input-label">Коста-Рика</span>
+            </label>
+            <label
+              class="main-catalog__label main-catalog__label--costa-peru"
+              for="peru"
+            >
+              <input class="" type="checkbox" id="peru" name="peru" disabled />
+              <span
+                class="main-catalog__control-mark main-catalog__control-mark--checkbox"
+              ></span>
+              <span class="main-catalog__input-label">Перу</span>
+            </label>
+          </fieldset>
+          <div class="main-catalog__buttons-wrapper">
+            <button
+              class="main-catalog__button button main-catalog__button--submit"
+              type="submit"
+            >
+              Применить
+            </button>
+            <button
+              class="main-catalog__button button main-catalog__button--reset"
+              type="submit"
+            >
+              Сбросить
+            </button>
+          </div>
+          <div class="main-catalog__sort">
+            <select name="main-catalog__select" aria-label="Сортировка">
+              <option value="default">По умолчанию</option>
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+          </div>
         </form>
+        <ul class="main-catalog__list">
+          <li class="main-catalog__item product-item">
+            <picture> Тут будет фотография товара </picture>
+            <div class="product-item__text-content">
+              <h3 class="product-item__title">Декаф Флэт Уайт</h3>
+              <p class="product-item__descripton">
+                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </p>
+            </div>
+            <div class="product-item__buy">
+              <span class="product-item__price"> 225₽ </span>
+              <button class="product-item__basket-button">В корзину</button>
+            </div>
+          </li>
+          <li class="main-catalog__item product-item">
+            <picture> Тут будет фотография товара </picture>
+            <div class="product-item__text-content">
+              <h3 class="product-item__title">Декаф Флэт Уайт</h3>
+              <p class="product-item__descripton">
+                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </p>
+            </div>
+            <div class="product-item__buy">
+              <span class="product-item__price"> 225₽ </span>
+              <button class="product-item__basket-button">В корзину</button>
+            </div>
+          </li>
+          <li class="main-catalog__item product-item">
+            <picture> Тут будет фотография товара </picture>
+            <div class="product-item__text-content">
+              <h3 class="product-item__title">Декаф Флэт Уайт</h3>
+              <p class="product-item__descripton">
+                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </p>
+            </div>
+            <div class="product-item__buy">
+              <span class="product-item__price"> 225₽ </span>
+              <button class="product-item__basket-button">В корзину</button>
+            </div>
+          </li>
+          <li class="main-catalog__item product-item">
+            <picture> Тут будет фотография товара </picture>
+            <div class="product-item__text-content">
+              <h3 class="product-item__title">Декаф Флэт Уайт</h3>
+              <p class="product-item__descripton">
+                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </p>
+            </div>
+            <div class="product-item__buy">
+              <span class="product-item__price"> 225₽ </span>
+              <button class="product-item__basket-button">В корзину</button>
+            </div>
+          </li>
+          <li class="main-catalog__item product-item">
+            <picture> Тут будет фотография товара </picture>
+            <div class="product-item__text-content">
+              <h3 class="product-item__title">Декаф Флэт Уайт</h3>
+              <p class="product-item__descripton">
+                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </p>
+            </div>
+            <div class="product-item__buy">
+              <span class="product-item__price"> 225₽ </span>
+              <button class="product-item__basket-button">В корзину</button>
+            </div>
+          </li>
+          <li class="main-catalog__item product-item">
+            <picture> Тут будет фотография товара </picture>
+            <div class="product-item__text-content">
+              <h3 class="product-item__title">Декаф Флэт Уайт</h3>
+              <p class="product-item__descripton">
+                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </p>
+            </div>
+            <div class="product-item__buy">
+              <span class="product-item__price"> 225₽ </span>
+              <button class="product-item__basket-button">В корзину</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="main-catalog__pagination pagination">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--back button">Назад</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link button">1</a>
+          </li>
+          <li class="pagination__item pagination__item--current">
+            <a class="pagination__link button pagination__link--current">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link button">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--forward button"
+              >Вперёд</a
+            >
+          </li>
+        </ul>
       </section>
+      <section class="map">ТУТ БУДЕТ КАРТА</section>
     </main>
-    <footer></footer>
+    <footer class="main-footer">
+      <div class="main-footer__links">
+        <a class="main-footer__links--shop" href="index.html">
+          <span class="main-footer__links--description"
+            >Интернет-магазин кофейных напитков
+          </span>
+        </a>
+        <div class="main-footer__socials socials">
+          <a class="socials__vk" href="#"> Вконтакте. </a>
+          <a class="socials__pinterest" href="#"> Pinterest. </a>
+          <a class="socials__ok" href="#"> Одноклассники. </a>
+        </div>
+      </div>
+      <div class="main-footer__e-shop-links e-shop-links">
+        <h4 class="main-footer__title">Интернет-магазин</h4>
+        <a class="e-shop-links__catalog" href="#"> Каталог</a>
+        <a class="e-shop-links__delivery" href="#"> Доставка</a>
+        <a class="e-shop-links__payment" href="#"> Способы оплаты</a>
+        <a class="e-shop-links__about-us" href="#"> О нас</a>
+      </div>
+      <div class="main-footer__media-links media-links">
+        <h4 class="main-footer__title">Медиа</h4>
+        <a class="media-links__blog" href="#"> Блог</a>
+        <a class="media-links__mass-media" href="#"> Информация для СМИ</a>
+        <a class="media-links__legal" href="#"> Правовая информация</a>
+      </div>
+      <div class="main-footer__contacts contacts">
+        <h4 class="main-footer__title">Контакты</h4>
+        <span class="contacts__address">
+          Санкт-Петербург, набережная реки Карповки, дом 5
+        </span>
+        <a class="contacts__tel-number" href="tel:+79999999999">
+          +7 (999) 999-99-99
+        </a>
+      </div>
+      <div class="main-footer__developed-by developed-by">
+        <span class="developed-by__description"> Разработано в </span>
+        <a class="developed-by__link" href="https://htmlacademy.ru">
+          HTML Academy
+        </a>
+      </div>
+    </footer>
     <script src="./js/script.js" defer></script>
   </body>
 </html>
