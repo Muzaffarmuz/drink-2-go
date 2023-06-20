@@ -8,9 +8,34 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img class="" src="" width="" height="" alt="Логотип кофейни" />
+      <a class="main-header__logo logo">
+        <svg
+          class="logo__svg"
+          width="32"
+          height="36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M32 18c0 2.874-.599 5.59-1.663 8H17c2.463-3.772 5-8.34 5-13C22
+              7.002 17.939 1.953 12.416.453A14.35 14.35 0 0 1 16 0c8.837 0 16
+              8.059 16 18Zm-14-5a9 9 0 0 0-9-9c-6.65 0-9 8.507-9 14 0 9.941
+              7.163 18 16 18 4.739 0 8.996-2.318 11.926-6H9c.352-.449.72-.91
+              1.099-1.386C13.616 24.201 18 18.7 18 13Z"
+            fill="#7859CF"
+          />
+        </svg>
       </a>
+      <nav class="user-nav">
+        <a class="user-nav__login" href="#">
+          <span class="user-nav__description">ВОЙТИ</span>
+        </a>
+        <a class="user-nav__shop-basket" href="#">
+          <span class="user-nav__description">Корзина</span>
+        </a>
+      </nav>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
