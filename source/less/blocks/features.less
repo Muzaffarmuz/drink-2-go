@@ -18,6 +18,9 @@
 .features__list {
   margin: 0 auto;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .features__title {
@@ -29,19 +32,47 @@
   text-align: center;
   color: #333333;
   margin: 0;
+  margin-bottom: 36px;
 }
 
 .features__item {
   list-style: none;
   margin: 0 auto;
-}
-
-.item__text-wrapper--speed {
   display: flex;
   flex-direction: column;
-  background-image: url(../../img/icons/energy.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  padding-top: 52px;
+
+  &--speed {
+    background-image: url("/img/icons/stack.svg#speed");
+    background-repeat: no-repeat;
+    background-size: 52px auto;
+    background-position-x: center;
+    background-position-y: -32px;
+  }
+
+  &--fit {
+    background-image: url("/img/icons/stack.svg#fit");
+    background-repeat: no-repeat;
+    background-size: 52px auto;
+    background-position-x: center;
+    background-position-y: -32px;
+  }
+
+  &--energy {
+    background-image: url("/img/icons/stack.svg#energy");
+    background-repeat: no-repeat;
+    background-size: 52px auto;
+    background-position-x: center;
+    background-position-y: -32px;
+  }
+
+  &--eco {
+    background-image: url("/img/icons/stack.svg#eco");
+    background-repeat: no-repeat;
+    background-size: 52px auto;
+    background-position-x: center;
+    background-position-y: -32px;
+  }
 }
 
 .item__title {

@@ -162,13 +162,11 @@
         <span class="features__badge">Преимущества</span>
         <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
         <ul class="features__list">
-          <li class="features__item item">
-            <div class="item__text-wrapper item__text-wrapper--speed">
-              <h3 class="item__title">Скорость</h3>
-              <p class="item__description">
-                Готовый напиток всегда под рукой — просто открой банку
-              </p>
-            </div>
+          <li class="features__item features__item--speed item">
+            <h3 class="item__title item__title--speed">Скорость</h3>
+            <p class="item__description">
+              Готовый напиток всегда под рукой — просто открой банку
+            </p>
           </li>
           <li class="features__item features__item--fit item">
             <h3 class="item__title">Удобство</h3>
@@ -191,17 +189,17 @@
         </ul>
       </section>
       <section class="main-catalog">
-        <span class="badge">Каталог</span>
+        <span class="main-catalog__badge">Каталог</span>
         <h2 class="main-catalog__title">Каталог кофейных напитков</h2>
         <form class="main-catalog__filter">
           <fieldset
             class="main-catalog__fieldset main-catalog__fieldset--price"
           >
-            <!-- <h3 class="main-catalog__label main-catalog__label--price">Цена</h3> -->
-            <div class="range-scale">
-              <div class="range-bar" style="left: 0; width: 226px">
-                ТУТ ДОЛЖЕН БЫТЬ СЛАЙДЕР
-              </div>
+            <h3 class="fieldset__title">Цена</h3>
+            <div class="filter__range"></div>
+            <div class="filter__inputs-wrapper">
+              <input class="filter__input filter__input--min" type="number" />
+              <input class="filter__input filter__input--max" type="number" />
             </div>
           </fieldset>
           <fieldset
@@ -341,29 +339,29 @@
               <span class="main-catalog__input-label">Перу</span>
             </label>
           </fieldset>
-          <div class="main-catalog__buttons-wrapper">
-            <button
-              class="main-catalog__button button main-catalog__button--submit"
-              type="submit"
-            >
-              Применить
-            </button>
-            <button
-              class="main-catalog__button button main-catalog__button--reset"
-              type="submit"
-            >
-              Сбросить
-            </button>
-          </div>
-          <div class="main-catalog__sort">
-            <select name="main-catalog__select" aria-label="Сортировка">
-              <option value="default">По умолчанию</option>
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="popular">Сначала популярные</option>
-            </select>
-          </div>
         </form>
+        <div class="main-catalog__buttons-wrapper">
+          <button
+            class="main-catalog__button button main-catalog__button--submit"
+            type="submit"
+          >
+            Применить
+          </button>
+          <button
+            class="main-catalog__button button main-catalog__button--reset"
+            type="submit"
+          >
+            Сбросить
+          </button>
+        </div>
+        <div class="main-catalog__sort">
+          <select name="main-catalog__select" aria-label="Сортировка">
+            <option value="default">По умолчанию</option>
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+        </div>
         <ul class="main-catalog__list">
           <li class="main-catalog__item product-item">
             <picture> Тут будет фотография товара </picture>
