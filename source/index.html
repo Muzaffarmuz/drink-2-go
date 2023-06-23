@@ -109,33 +109,84 @@
           class="page-slider__button page-slider__button--left"
           type="button"
         >
+          <svg
+            class="page-slider__arrow page-slider__arrow--left"
+            width="20"
+            height="20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M13.7166 0 15 1.3208 6.5668 10 15 18.6792 13.7166 20 4 10l9.7166-10Z"
+              fill="#7859CF"
+            />
+          </svg>
           <span class="visually-hidden">Предыдущая фотография</span>
         </button>
         <div class="page-slider__content-wrapper">
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                img/devil-bridge-desktop.jpg    1x,
-                img/devil-bridge-desktop@2x.jpg 2x
-              "
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                img/devil-bridge-tablet.jpg    1x,
-                img/devil-bridge-tablet@2x.jpg 2x
-              "
-            />
-            <img
-              class="page-slider__image"
-              src="./img/flat-white-mobile.webp"
-              srcset="./img/flat-white-mobile@2x.png 2x"
-              width="280"
-              height="280"
-              alt="Декаф Уайт."
-            />
-          </picture>
+          <div class="page-slider__image-wrapper">
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/slider-images/flat-white-desktop.webp    1x,
+                  ./img/slider-images/flat-white-desktop@2x.webp 2x
+                "
+                width="600"
+                height="600"
+              />
+              <source
+                type="image/jpeg"
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/slider-images/flat-white-desktop.jpg    1x,
+                  ./img/slider-images/flat-white-desktop@2x.jpg 2x
+                "
+                width="600"
+                height="600"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/slider-images/flat-white-tablet.webp    1x,
+                  ./img/slider-images/flat-white-tablet@2x.webp 2x
+                "
+                width="476"
+                height="476"
+              />
+              <source
+                type="image/jpeg"
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/slider-images/flat-white-tablet.jpg    1x,
+                  ./img/slider-images/flat-white-tablet@2x.jpg 2x
+                "
+                width="476"
+                height="476"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/slider-images/flat-white-mobile.webp    1x,
+                  ./img/slider-images/flat-white-mobile@2x.webp 2x
+                "
+                width="280"
+                height="280"
+              />
+              <img
+                class="page-slider__image"
+                src="./img/slider-images/flat-white-mobile.png 1x"
+                srcset="./img/slider-images/flat-white-mobile@2x.png 2x"
+                width="280"
+                height="280"
+                alt="Банка флэтуайт."
+              />
+            </picture>
+          </div>
           <span class="page-slider__badge">Новинка!</span>
           <h2 class="page-slider__title">Декаф Флэт Уайт</h2>
           <p class="page-slider__description">
@@ -155,6 +206,20 @@
           class="page-slider__button page-slider__button--right"
           type="button"
         >
+          <svg
+            class="page-slider__arrow page-slider__arrow--right"
+            width="20"
+            height="20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6.283 0 5 1.32 13.433 10 5 18.68 6.283 20 16 10 6.283 0Z"
+              fill="#7859CF"
+            />
+          </svg>
           <span class="visually-hidden">Следующая фотография</span>
         </button>
       </section>
@@ -584,16 +649,16 @@
         <picture>
           <source
             type="image/webp"
-            media="(min-width: 1400px)"
+            media="(min-width: 1440px)"
             srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x"
-            width="1400"
+            width="1440"
             height="420"
           />
           <source
             type="image/jpeg"
-            media="(min-width: 1400px)"
+            media="(min-width: 1440px)"
             srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x"
-            width="1400"
+            width="1440"
             height="420"
           />
           <source
