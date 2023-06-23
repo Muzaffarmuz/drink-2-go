@@ -580,7 +580,52 @@
           </li>
         </ul>
       </section>
-      <div class="map">ТУТ БУДЕТ КАРТА</div>
+      <div class="map">
+        <picture>
+          <source
+            type="image/webp"
+            media="(min-width: 1400px)"
+            srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x"
+            width="1400"
+            height="420"
+          />
+          <source
+            type="image/jpeg"
+            media="(min-width: 1400px)"
+            srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x"
+            width="1400"
+            height="420"
+          />
+          <source
+            type="image/webp"
+            media="(min-width: 768px)"
+            srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x"
+            width="768"
+            height="420"
+          />
+          <source
+            type="image/jpeg"
+            media="(min-width: 768px)"
+            srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x"
+            width="768"
+            height="420"
+          />
+          <source
+            type="image/webp"
+            srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x"
+            width="320"
+            height="420"
+          />
+          <img
+            class="map__image"
+            src="./img/map-mobile.jpg 1x"
+            srcset="./img/map-mobile@2x.jpg 2x"
+            width="320"
+            height="420"
+            alt="Карта как до нас добраться."
+          />
+        </picture>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="main-footer__links links">
@@ -720,7 +765,10 @@
       </div>
       <div class="main-footer__developed-by developed-by">
         <span class="developed-by__description"> Разработано в </span>
-        <a class="developed-by__link" href="https://htmlacademy.ru">
+        <a
+          class="developed-by__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
           <span class="developed-by__name">HTML Academy</span>
           <svg
             width="12"
