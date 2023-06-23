@@ -15,8 +15,27 @@
   padding: 0;
   margin: 0 auto;
 
+  &--closed {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
+
   @media (max-width: @mobile-width-only) {
     flex-direction: column;
+  }
+
+  &--opened {
+    .nav__list--opened {
+      position: absolute;
+      z-index: 2;
+      top: 60px;
+      left: 0;
+
+      @media (min-width: @tablet-width) {
+        position: static;
+      }
+    }
   }
 }
 
