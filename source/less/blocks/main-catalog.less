@@ -77,13 +77,14 @@
   width: 168px;
   background-color: @lightest-grey;
   font-size: 16px;
-  font-family: Montserrat;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 600;
   line-height: 24px;
 }
 
 .main-catalog__fieldset--milk .main-catalog__label {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .main-catalog__fieldset--milk .main-catalog__input-label {
@@ -96,10 +97,6 @@
 
 .main-catalog__fieldset--country .main-catalog__input-label {
   margin-left: 52px;
-}
-
-.main-catalog__fieldset--milk .main-catalog__label {
-  position: relative;
 }
 
 .main-catalog__control-mark--radio {
@@ -124,9 +121,7 @@
   border-radius: 50%;
 }
 
-.main-catalog__label
-  [type="radio"]:checked
-  + .main-catalog__control-mark::after {
+[type="radio"]:checked + .main-catalog__control-mark::after {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -159,7 +154,7 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: @base-whites;
   position: absolute;
   top: 3px;
   left: 3px;
@@ -200,7 +195,7 @@
   margin-top: 24px;
   margin-bottom: 4px;
   font-size: 18px;
-  font-family: Montserrat;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 700;
   line-height: 32px;
 }
