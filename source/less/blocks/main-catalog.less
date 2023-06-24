@@ -17,6 +17,10 @@
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 6px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 78px;
+  }
 }
 
 .main-catalog__title {
@@ -29,6 +33,11 @@
   color: @base-black;
   margin: 0 auto;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
 }
 
 .main-catalog__buttons-wrapper {
@@ -36,6 +45,12 @@
   flex-direction: column;
   padding: 8px 20px 38px 20px;
   gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 16px;
+  }
 }
 
 .main-catalog__button {
@@ -58,6 +73,17 @@
   }
 }
 
+.main-catalog__sort {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 26px;
+    padding-top: 4px;
+    padding-bottom: 30px;
+  }
+}
+
 .main-catalog__sort label {
   font-size: 16px;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -65,6 +91,10 @@
   line-height: 24px;
   color: @base-black;
   padding-left: 23px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 4px;
+  }
 }
 
 .main-catalog__sort select {
@@ -80,6 +110,10 @@
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 600;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 15px;
+  }
 }
 
 .main-catalog__fieldset--milk .main-catalog__label {
@@ -170,6 +204,15 @@
   margin: 0 20px;
   margin-top: 16px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .main-catalog__item {
@@ -180,11 +223,19 @@
   padding: 40px 20px 20px;
   margin-bottom: 20px;
   background-color: @base-white;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 30px 30px;
+    margin: 0;
+  }
 }
 
 .main-catalog__item img {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+  }
 }
 
 .product-item__text-content {
@@ -198,12 +249,26 @@
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 700;
   line-height: 32px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    // padding-left: 12px;
+  }
 }
 
 .product-item__description {
   margin: 0;
   margin-bottom: 16px;
   padding-right: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 19px;
+  }
 }
 
 .product-item__buy {
@@ -246,6 +311,13 @@
   padding: 22px 20px 42px;
   margin: 0 auto;
   column-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    justify-content: end;
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
 }
 
 .pagination__link {
@@ -254,6 +326,8 @@
   align-items: center;
   min-width: 40px;
   min-height: 40px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-transform: capitalize;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
@@ -275,6 +349,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px 12px;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
 }
 
 .pagination__link--forward {
@@ -282,46 +360,36 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px 12px;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
+}
+
+.pagination__text {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    color: @base-primary;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    line-height: 24px;
+    text-transform: capitalize;
+    padding: 8px 20px;
+  }
 }
 
 .map {
   padding-top: 12px;
   background-color: @light-grey;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .map img {
   display: block;
 }
-/*
-.main-catalog__pagination {
-  margin: 0 20px;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.pagination__item {
-  min-height: 40px;
-  min-width: 40px;
-}
-
-.pagination__link {
-  padding: 8px;
-  color: @base-primary;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Montserrat", "Arial", sans-serif;
-  line-height: 24px;
-  border-radius: 4px;
-  background-color: #ffffff;
-
-  &--current {
-    color: #333333;
-    font-weight: 600;
-  }
-}
-*/

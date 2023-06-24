@@ -2,6 +2,13 @@
   display: flex;
   flex-direction: column;
   padding-left: 23px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    padding-left: 21px;
+  }
 }
 
 .main-catalog__fieldset {
@@ -54,6 +61,10 @@
   display: flex;
   gap: 16px;
   margin-top: 46px;
+
+  @media (min-width: @tablet-width) {
+    gap: 18px;
+  }
 }
 
 .fieldset__input {
@@ -70,8 +81,17 @@
   font-weight: 500;
   line-height: 24px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 67px;
+    padding: 5px 9px;
+  }
 }
 
+.fieldset__input--max::placeholder {
+  @media (min-width: @tablet-width) {
+  }
+}
 .fieldset__inputs-divider {
   display: block;
   width: 8px;

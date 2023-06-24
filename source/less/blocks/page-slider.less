@@ -8,16 +8,34 @@
 .page-slider__content-wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column-reverse;
+  }
 }
 
 .page-slider__image-wrapper {
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 6px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 476px;
+    height: 476px;
+  }
+}
+
+.page-slider__info-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .page-slider__button {
-  width: 20px;
+  min-width: 20px;
   background-color: @flat-white;
   margin: 0;
   padding: 0;
@@ -25,6 +43,11 @@
   padding-left: 20px;
   position: relative;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    min-width: 80px;
+    padding: 10px;
+  }
 }
 
 .page-slider__arrow {
@@ -33,10 +56,18 @@
 
   &--left {
     left: 0;
+
+    @media (min-width: @tablet-width) {
+      left: 30px;
+    }
   }
 
   &--right {
     right: 0;
+
+    @media (min-width: @tablet-width) {
+      right: 30px;
+    }
   }
 }
 
@@ -51,6 +82,10 @@
   font-size: 12px;
   line-height: 16px;
   padding-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 60px;
+  }
 }
 
 .page-slider__title {
@@ -63,6 +98,14 @@
   letter-spacing: 0.02em;
   margin: 0;
   padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+    padding-bottom: 14px;
+  }
 }
 
 .page-slider__description {
@@ -75,6 +118,17 @@
   color: @base-black;
   margin: 0;
   padding-bottom: 20px;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 .page-slider__buy {
@@ -82,6 +136,11 @@
   align-items: center;
   margin: 0;
   padding: 0 25px 60px 25px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+    padding-bottom: 308px;
+  }
 }
 
 .buy__old {
