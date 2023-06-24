@@ -9,6 +9,12 @@
     column-gap: 10px;
     padding-left: 21px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    margin-top: -52px;
+  }
 }
 
 .main-catalog__fieldset {
@@ -84,6 +90,11 @@
 
   @media (min-width: @tablet-width) {
     width: 67px;
+    padding: 5px 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 114px;
     padding: 5px 9px;
   }
 }
