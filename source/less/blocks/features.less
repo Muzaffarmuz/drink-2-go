@@ -1,0 +1,106 @@
+.features__badge {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: @base-primary;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 4px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__list {
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.features__title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: @base-black;
+  margin: 0 auto;
+  padding-bottom: 36px;
+}
+
+.features__item {
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  &--speed {
+    padding-top: 64px;
+    background-image: url("/img/icons/stack.svg#speed");
+    background-repeat: no-repeat;
+    background-size: 52px auto;
+    background-position-x: center;
+    background-position-y: -44px;
+  }
+
+  &--fit {
+    padding: 66px 44px 0 44px;
+    background-image: url("/img/icons/stack.svg#fit");
+    background-repeat: no-repeat;
+    background-size: 52px auto;
+    background-position-x: center;
+    background-position-y: -42px;
+  }
+
+  &--energy {
+    padding: 66px 20px 0 20px;
+    background-image: url("/img/icons/stack.svg#energy");
+    background-repeat: no-repeat;
+    background-size: 50px auto;
+    background-position-x: center;
+    background-position-y: -40px;
+  }
+
+  &--eco {
+    padding-top: 66px;
+    background-image: url("/img/icons/stack.svg#eco");
+    background-repeat: no-repeat;
+    background-size: 50px auto;
+    background-position-x: center;
+    background-position-y: -40px;
+  }
+}
+
+.item__title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: @base-black;
+  margin: 0 auto;
+  padding-bottom: 4px;
+}
+
+.item__description {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: @base-black;
+  margin: 0 auto;
+}

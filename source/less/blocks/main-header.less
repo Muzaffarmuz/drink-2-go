@@ -1,0 +1,60 @@
+.main-header {
+  color: @base-black;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.user-nav {
+  display: flex;
+  flex-direction: row;
+  // position: relative;
+}
+
+.main-header__logo {
+  padding-top: 12px;
+  padding-left: 20px;
+}
+
+.user-nav__login,
+.user-nav__shop-basket {
+  padding: 22px;
+  margin: 0;
+  max-height: 16px;
+}
+
+.user-nav__toggle {
+  width: 60px;
+  height: 60px;
+  padding: 22px;
+  margin: 0;
+  background-color: @base-white;
+  position: relative;
+  z-index: 2;
+  display: block;
+  cursor: pointer;
+  border: 0;
+
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.user-nav__description {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.user-nav .user-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: 22px;
+  width: 16px;
+  height: 1px;
+  background-color: @base-black;
+  box-shadow: 0 4px 0 0 @base-black, 0 8px 0 0 @base-black;
+}
