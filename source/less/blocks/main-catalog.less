@@ -16,7 +16,7 @@
   text-align: center;
   margin: 0 auto;
   padding-top: 50px;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
 }
 
 .main-catalog__title {
@@ -34,7 +34,7 @@
 .main-catalog__buttons-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px 40px 20px;
+  padding: 8px 20px 38px 20px;
   gap: 20px;
 }
 
@@ -67,13 +67,35 @@
   padding-left: 23px;
 }
 
-.main-catalog__select {
+.main-catalog__sort select {
   display: inline-flex;
   padding: 4px 10px;
+  padding-left: 12px;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
   color: @base-primary;
+  border: none;
+  width: 168px;
+  background-color: @lightest-grey;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.main-catalog__fieldset--milk .main-catalog__label {
+  margin-bottom: 20px;
+}
+
+.main-catalog__fieldset--milk .main-catalog__input-label {
+  margin-left: 10px;
+}
+
+.main-catalog__fieldset--country .main-catalog__label {
+  margin-bottom: 20px;
+}
+
+.main-catalog__fieldset--country .main-catalog__input-label {
+  margin-left: 28px;
 }
 
 .main-catalog__list {
@@ -104,11 +126,16 @@
 .product-item__title {
   margin-top: 24px;
   margin-bottom: 4px;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 32px;
 }
 
 .product-item__description {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
+  padding-right: 5px;
 }
 
 .product-item__buy {
@@ -123,6 +150,7 @@
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 600;
   line-height: 32px;
+  margin-top: 2px;
 }
 
 .product-item__basket-button {
@@ -147,7 +175,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 20px 44px;
+  padding: 22px 20px 42px;
   margin: 0 auto;
   column-gap: 20px;
 }
@@ -191,6 +219,14 @@
   background-size: 15px 12px;
 }
 
+.map {
+  padding-top: 12px;
+  background-color: @light-grey;
+}
+
+.map img {
+  display: block;
+}
 /*
 .main-catalog__pagination {
   margin: 0 20px;
