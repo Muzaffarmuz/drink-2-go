@@ -280,8 +280,27 @@
             <fieldset
               class="main-catalog__fieldset main-catalog__fieldset--price fieldset"
             >
-              <h3 class="fieldset__title">Цена</h3>
-              <div class="fieldset__range"></div>
+              <h3 class="fieldset__title fieldset__title--price">Цена</h3>
+              <div class="fieldset__range-scale range-scale">
+                <div class="range-scale__bar">
+                  <button
+                    class="range-scale__toggle range-scale__toggle--min"
+                    type="button"
+                  >
+                    <span class="visually-hidden"
+                      >Изменить минимальную цену.</span
+                    >
+                  </button>
+                  <button
+                    class="range-scale__toggle range-scale__toggle--max"
+                    type="button"
+                  >
+                    <span class="visually-hidden"
+                      >Изменить максимальную цену.</span
+                    >
+                  </button>
+                </div>
+              </div>
               <div class="fieldset__inputs-wrapper">
                 <input
                   class="fieldset__input fieldset__input--min"
