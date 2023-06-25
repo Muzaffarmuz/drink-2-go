@@ -17,29 +17,55 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo logo">
-          <svg
-            class="logo__svg"
-            width="32"
-            height="36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M32 18c0 2.874-.599 5.59-1.663 8H17c2.463-3.772 5-8.34 5-13C22
-              7.002 17.939 1.953 12.416.453A14.35 14.35 0 0 1 16 0c8.837 0 16
-              8.059 16 18Zm-14-5a9 9 0 0 0-9-9c-6.65 0-9 8.507-9 14 0 9.941
-              7.163 18 16 18 4.739 0 8.996-2.318 11.926-6H9c.352-.449.72-.91
-              1.099-1.386C13.616 24.201 18 18.7 18 13Z"
-              fill="#7859CF"
+        <a class="main-header__logo logo" href="index.html">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/icons/stack.svg#logo-tablet"
+              width="170"
+              height="36"
             />
-          </svg>
+            <source
+              media="(min-width: 768px)"
+              srcset="img/icons/stack.svg#logo-phone"
+              width="82"
+              height="36"
+            />
+            <img
+              class="logo__svg"
+              src="img/icons/stack.svg#logo-header-mobile"
+              width="32"
+              height="36"
+              alt="Логотип сайта."
+            />
+          </picture>
+          <span class="main-header__logo-description"
+            >Интернет-магазин <br />
+            кофейных напитков</span
+          >
         </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul
+              class="main-nav__list main-nav__list--closed main-nav__list--nojs"
+            >
+              <li class="main-nav__item main-nav__item--current">
+                <a href="#">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Каталог</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">О нас</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <nav class="user-nav">
           <a class="user-nav__login login" href="#">
-            <span class="user-nav__description">ВОЙТИ</span>
             <svg
               class="login__svg"
               width="16"
@@ -59,9 +85,9 @@
                 fill="#333"
               />
             </svg>
+            <span class="user-nav__description">ВОЙТИ</span>
           </a>
           <a class="user-nav__shop-basket shop-basket" href="#">
-            <span class="user-nav__description">Корзина</span>
             <svg
               class="shop-basket__svg"
               width="16"
@@ -85,32 +111,13 @@
                 fill="#333"
               />
             </svg>
+            <span class="user-nav__description">КОРЗИНА</span>
           </a>
           <button class="user-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </nav>
       </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul
-            class="main-nav__list main-nav__list--closed main-nav__list--nojs"
-          >
-            <li class="main-nav__item main-nav__item--current">
-              <a>Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">Каталог</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">Доставка</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">О нас</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Магазин Drink to go.</h1>
