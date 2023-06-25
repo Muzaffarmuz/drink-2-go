@@ -276,7 +276,11 @@
         <span class="main-catalog__badge">Каталог</span>
         <h2 class="main-catalog__title">Каталог кофейных напитков</h2>
         <div class="main-catalog__desktop-wrapper">
-          <form class="main-catalog__filter" action="#" method="POST">
+          <form
+            class="main-catalog__filter"
+            action="https://echo.htmlacademy.ru/"
+            method="POST"
+          >
             <fieldset
               class="main-catalog__fieldset main-catalog__fieldset--price fieldset"
             >
@@ -305,12 +309,14 @@
                 <input
                   class="fieldset__input fieldset__input--min"
                   type="number"
+                  name="min-price"
                   placeholder="0"
                 />
                 <span class="fieldset__inputs-divider"></span>
                 <input
                   class="fieldset__input fieldset__input--max"
                   type="number"
+                  name="max-price"
                   placeholder="123"
                 />
               </div>
