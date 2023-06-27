@@ -74,6 +74,18 @@
   border-radius: 4px;
   background-color: @base-primary;
   border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @primary-lighter;
+    color: @base-white;
+  }
+
+  &:active {
+    background-color: @primary-darker;
+    color: @base-white;
+  }
 
   &--reset {
     color: @base-primary;
@@ -325,6 +337,15 @@
   background-size: 20px 20px;
   background-position-y: center;
   background-position-x: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: @primary-lighter;
+  }
+
+  &:active {
+    background-color: @primary-darker;
+  }
 }
 
 .main-catalog__pagination {
@@ -366,11 +387,49 @@
   color: @base-primary;
   background-color: @base-white;
   border-radius: 4px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @primary-lighter;
+    color: @base-white;
+
+    & span {
+      color: @base-white;
+    }
+  }
+
+  &:active {
+    background-color: @primary-darker;
+    color: @base-white;
+
+    & span {
+      color: @base-white;
+    }
+  }
+
+  &:disabled {
+    background-color: @light-grey;
+    color: @base-white;
+
+    & span {
+      color: @base-white;
+    }
+  }
 
   &--current {
     font-weight: 600;
     font-size: 16px;
     color: @base-black;
+    background-color: inherit;
+    cursor: default;
+
+    &:hover,
+    &:focus,
+    &:active &:disabled {
+      background-color: inherit;
+      color: @base-black;
+    }
   }
 }
 
